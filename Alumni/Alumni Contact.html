@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=1.0" />
+  <link rel="stylesheet" href="css/Contact.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <title>Contact Alumni HEC</title>
+</head>
+
+<nav class="nav">
+      <div class="container">
+     <a href="Alumni Home.html"> <img src="img/Full size logo-01 (1).png" class="logo" width="45vw "></a>
+        <ul>
+          <li><a href="Alumni Home.html" class="current">Home</a></li>
+          <li><a href="Alumni Contact.html">Contact</a></li>
+          <li><a href="Alumni Team.html">Team</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<body> 
+
+      <section class="contact" >
+    <div class="contact-content">
+      <h2>Contact Us</h2>
+      
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum itaque ea at laborum molestiae dolorem
+        soluta, earum culpa voluptatem harum.</p>
+    </div>
+    <div class="contact-containter">
+      <div class="contact-info">
+        <div class="box">
+          <div class="icon"> <i class="bi bi-geo-alt"></i> </div>
+          <div class="text">
+            <h2>Address</h2>
+            <p>EHEC KOLEA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="bi bi-envelope-open"></i></div>
+          <div class="text">
+            <h2>E-mail</h2>
+            <p>alumnihecalger.01@gmail.com</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"> <i class="bi bi-telephone"></i> </div>
+          <div class="text">
+            <h2>Phone</h2>
+            <p>0799 42 68 47</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="" onsubmit = "return validate();">
+          <h2>Contactez Nous</h2>
+           <div id="error_message">
+  </div>
+          <div class="input-box">
+             <input type="text"  id="name" required="required" >
+            <span>Nom - Prenom</span>
+          </div>
+           <div class="input-box">
+                  <input type="text"  id="email" required="required" >
+            <span>E-mail</span>
+          </div>
+           <div class="input-box">
+        <textarea  id="message" required="required" ></textarea>
+            <span>Laissez un message...</span>
+          </div>
+           <div class="input-box">
+       <input type="submit" name="" value="Envoyer">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/contact.js"></script>
+</body>
+
+</html>

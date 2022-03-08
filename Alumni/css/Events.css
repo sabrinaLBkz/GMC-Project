@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    background:   transparent;
+
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.event-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.left-slide>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.left-slide h1 {
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-slide>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.event-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.event-container .action-buttons .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.event-container .action-buttons .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: #144178;
+    font-size: 15px;
+    padding: 15px;
+
+}
+
+button:hover {
+    color: rgb(22, 22, 22);
+}
+
+button:focus {
+    outline: none;
+}
+
+.event-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+/*Navbar*/
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.nav {
+    font-family: 'Open Sans', sans-serif;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: #144178;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+    color: #000;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+    color: #ebbe87;
+    border-radius: 3px;
+    font-weight: bold;
+}

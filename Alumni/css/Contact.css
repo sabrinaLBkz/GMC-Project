@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  font-family: 'Open Sans', sans-serif;;
+  position: sticky;
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #144178;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.nav.active a {
+  color: #000;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #f2d377;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("/img/contactbg.jpg");
+  background-size:cover;
+}
+.contact .contact-content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .contact-content h2 {
+  font-family:'Open Sans', sans-serif;  
+font-size: 35px;
+font-weight: 500;
+color: #f2d377;
+
+}
+.contact .contact-content p {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #fff;
+
+}
+.contact-containter{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top: 30px;
+}
+.contact-containter .contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-containter .contact-info .box {
+  display: flex;
+  position: relative;
+  padding: 20px 0 ;
+}
+.contact-containter .contact-info .box .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  min-width: 60px;
+  height: 60px;
+  background: #f2d377;
+}
+.contact-containter .contact-info .box .text {
+  display: flex ;
+  margin-left: 20px;
+  font-size :17px;
+  color: #fff;
+flex-direction: column;
+font-weight: 300;
+font-family: 'Montserrat', sans-serif;
+
+}
+.contact-containter .contact-info .box .text h2{
+font-weight: 500;
+color:#ebbe87 ;
+}
+.contact-form {
+  width: 38%;
+  padding: 40px;
+  background:whitesmoke ;
+}
+.contact-form h2 {
+  font-size: 30px;
+  color: #ebbe87 ;
+  font-weight: 500;
+  font-family: 'Montserrat'sans-serif;
+}
+.contact-form  .input-box{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-form  .input-box input,
+.contact-form  .input-box textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ebbe87;
+  resize: none;
+}
+
+.contact-form  .input-box span {
+  position: absolute;
+  left: 0;
+  padding:5px 0;
+  font-size: 16px;
+  margin: 10px 0 ;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contact-form  .input-box input:focus ~ span ,
+.contact-form  .input-box input:valid ~ span,
+.contact-form  .input-box textarea:focus ~ span, 
+.contact-form  .input-box textarea:valid ~ span
+ {
+  font-size: 12px;
+  color: #ebbe87;
+  transform: translateY(-20px);
+
+}
+.contact-form  .input-box input[type="submit"]{
+  width: 100px;
+  background: #ebbe87;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+@media (max-width : 990px)
+{
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .containerInfo {
+margin-bottom: 140px;
+  }
+    .container .containerInfo ,.contact-form {
+      width: 100%  ;
+    }
+}
